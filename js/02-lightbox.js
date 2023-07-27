@@ -21,6 +21,7 @@ const galleryItemsArray = galleryItems.map(galleryItem =>
 gallery.insertAdjacentHTML('beforeend', galleryItemsArray);
 
 new SimpleLightbox('.gallery__link', {
+    captionsData: "alt",
     captionDelay: 250,
-    captionData: 'alt'
+    captionPosition: "bottom",
 })
